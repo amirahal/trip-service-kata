@@ -13,7 +13,10 @@ public class User {
 	public List<User> getFriends() {
 		return friends;
 	}
-	
+
+	public boolean isFriendWith(User user) {
+		return friends.contains(user);
+	}
 	public void addFriend(User user) {
 		friends.add(user);
 	}
